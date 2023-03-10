@@ -11,8 +11,7 @@ END:STANDARD
 END:VTIMEZONE
 `
 
-    const icalExpander = new IcalExpander({ ical, maxIterations: 1000 })
+    const icalExpander = new IcalExpander({ ics: ical, maxIterations: 1000 })
     const events = icalExpander.between(new Date('2020-01-01'), new Date('2020-12-31'))
-    console.log(events)
   })
 })
